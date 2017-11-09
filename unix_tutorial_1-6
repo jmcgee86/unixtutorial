@@ -1,0 +1,468 @@
+    1  ls
+    2  cd htmldemo/
+    3  touch correct.html
+    4  c9 correct.html 
+    5  ..
+    6  cd project1/
+    7  c9 index.html 
+    8  ..
+    9  cd htmldemo/
+   10  c9 index.html 
+   11  ..
+   12  cd project1/
+   13  touch index2.html
+   14  c9 index2.html 
+   15  ..
+   16  cd htm
+   17  cd htmldemo/
+   18  touch class2.html
+   19  c9 class2.html 
+   20  cd project1/
+   21  touch script.js
+   22  c9 script.js 
+   23  ..
+   24  cd workspace/
+   25  mkdir htmlLesson
+   26  touch index.html
+   27  c9 index.html 
+   28  mkdir gitImmersion
+   29  cd gitImmersion/
+   30  cd git_tutorial/
+   31  cd work/
+   32  mkdir hello
+   33  cd hello
+   34  file hello.rb
+   35  touch hello.rb
+   36  git init
+   37  git add hello.rb
+   38  git commit -m "first commit"
+   39  git status
+   40  file hello.rb 
+   41  puts "Hello, World"
+   42  file: hello.rb 
+   43  c9 hello.rb 
+   44  add hello.rb 
+   45  git add hello.rb 
+   46  git commit -m "first commit"
+   47  git status
+   48  git puts "Hello, #{ARGV.first}!"
+   49  git status
+   50  git add hello.rb 
+   51  git status
+   52  git commit
+   53  git status
+   54  add hello.rb 
+   55  git add hello.rb 
+   56  # Default is "World"
+   57  name = ARGV.first || "World"
+   58  git status
+   59  clear
+   60  cd work
+   61  ..
+   62  mkfdir hello
+   63  mkdir hello
+   64  cd hello
+   65  touch hello.rb
+   66  c9 hello.rb 
+   67  git init
+   68  git add hello.rb 
+   69  git commit -m "First Commit"
+   70  git status
+   71  git add hello.rb 
+   72  git status
+   73  git commit
+   74  git commi
+   75  git commit
+   76  git add hello.rb 
+   77  git status
+   78  git commit -m "Added a default value"
+   79  git status
+   80  git add .
+   81  git status
+   82  git log
+   83  git commit -m "Added a comment"
+   84  git log
+   85  clear
+   86  cd gitImmersion/
+   87  cd git_tutorial/
+   88  cd work/
+   89  git log
+   90  cd hello/
+   91  git log
+   92  mkdir sampleFilesAssignment
+   93  cd sampleFilesAssignment/
+   94  unzip sample\ files.zip 
+   95  cd round1b/
+   96  git init
+   97  touch firstfile.txt
+   98  c9 firstfile.txt 
+   99  add firstfile.txt 
+  100  git add firstfile.txt 
+  101  git commit -m "Create a new file and add at least 3 lines to it"
+  102  git status 
+  103  git add .
+  104  git status
+  105  clear
+  106  ..
+  107  clear
+  108  mk dir sampleGitAssignment
+  109  mkdir sampleGitAssigment
+  110  unzip sampleGitAssigment/
+  111  cd sampleGitAssigment/
+  112  unzip sample\ files.zip 
+  113  cd round1b/
+  114  git init
+  115  touch firstfile.txt
+  116  c9 firstfile.txt 
+  117  git status
+  118  git add .
+  119  git status
+  120  git commit "Create a new file and add at least 3 lines to it"
+  121  git commit -m "Create a new file and add at least 3 lines to it"
+  122  mkdir
+  123  mkdir secondDir
+  124  cd secondDir/
+  125  touch secondFile
+  126  c9 secondFile 
+  127  add .
+  128  git add .
+  129  git status
+  130  ..
+  131  add firstfile.txt 
+  132  git add firstfile.txt 
+  133  git status
+  134  git commit -m "Create a second file inside of a new directory and modify any existing file"
+  135  cd secondDir/
+  136  git rm secondFile 
+  137  git status
+  138  cd ..
+  139  git status
+  140  git commit -m "delete any file"
+  141  git checkout -b newbranch
+  142  git status
+  143  touch newFileinNewBranch
+  144  c9 newFileinNewBranch 
+  145  git status
+  146  git add newFileinNewBranch 
+  147  git merge master
+  148  git status
+  149  git commit -m "Create a new branch and create a new file with three lines in this branch"
+  150  git status
+  151  git checkout master 
+  152  git status
+  153  git add firstfile.txt 
+  154  git checkout newbranch 
+  155  git status
+  156  git merge master 
+  157  c9 newFileinNewBranch 
+  158  git add newFileinNewBranch 
+  159  git status
+  160  git merge master
+  161  git commit -m "make another edit to a file"
+  162  git merge master 
+  163  git checkout master 
+  164  git checkout newbranch 
+  165  git merge master 
+  166  git checkout master 
+  167  git merge newbranch 
+  168  git status
+  169  git commit -m "Merge this branch with the master branch"
+  170  git checkout newbranch 
+  171  git merge master 
+  172  git checkout master
+  173  git checkout -b thirdbranch
+  174  git status
+  175  git commit -m "add a third branch"
+  176  git rm newFileinNewBranch 
+  177  git status
+  178  git commit -m "delete a file"
+  179  git checkout 
+  180  git checkout master 
+  181  git checkout -b hackerbranch
+  182  touch hacker.txt
+  183  git add hacker.txt 
+  184  git status
+  185  git commit -m "Create another new branch and a text file reading ‘hacker’"
+  186  git checkout thirdbranch 
+  187  git checkout hackerbranch 
+  188  c9 newFileinNewBranch 
+  189  add newFileinNewBranch 
+  190  git add newFileinNewBranch 
+  191  git commit -m "Modify the file you deleted in the other branch"
+  192  git merge thirdbranch 
+  193  git checkout h
+  194  git checkout hackerbranch 
+  195  git remote add origin git@github.com:jmcgee86/gitSampleFilesAssignment.git
+  196  git push -u origin master
+  197  node
+  198  mkdir portfolio
+  199  cd portfolio/
+  200  touch index.html
+  201  c9 index.html 
+  202  touch style.css
+  203  c9 style.css 
+  204  git init
+  205  git add index.html 
+  206  git add style.css 
+  207  git remote add origin git@github.com:jmcgee86/Project2-PortfolioPage.git
+  208  git push -u origin master
+  209  git commit -m "initial commit"
+  210  git push -u origin master
+  211  git add index.html 
+  212  git add style.css 
+  213  git commit -m "added @media functions"
+  214  git push
+  215  git add style.css 
+  216  git commit -m "updated @media css to change at same screen width as when navbar changes"
+  217  git push
+  218  git add index.html 
+  219  git commit -m "text changes to index"
+  220  git push
+  221  ..
+  222  clear
+  223  mkdir DOM
+  224  touch button.html
+  225  cd DOM
+  226  c9 button.html 
+  227  ..
+  228  mkdir bootstrap
+  229  cd bootstrap/
+  230  touch index.html
+  231  c9 index.html 
+  232  mkdir style
+  233  cd style/
+  234  touch index.css
+  235  c9 index.css 
+  236  ..
+  237  git init
+  238  git add index.html 
+  239  git add style/
+  240  git add style/index.css 
+  241  git commit -m "initial commit"
+  242  git remote add origin git@github.com:jmcgee86/ClassWorkBootstrap.git
+  243  git push -u origin master
+  244  git add index.html 
+  245  git commit -m "put navbar in container"
+  246  git push
+  247  ..
+  248  cd DOM/
+  249  touch button.html 
+  250  c9 button.html 
+  251  clear
+  252  ..
+  253  cd DOM/
+  254  git init
+  255  git add bulbonoff.html 
+  256  git commit -m "initial commit"
+  257  git remote add origin git@github.com:jmcgee86/DOM.git
+  258  git push -u origin master
+  259  ..
+  260  clear
+  261  cd portfolio/
+  262  c9 index.html 
+  263  add index.html 
+  264  git add index.html 
+  265  git status
+  266  git commit -m "fix indentation on index.html"
+  267  git push
+  268  git add index.html 
+  269  git commit -m "fixed indentation of index.html"
+  270  git push
+  271  ..
+  272  clear
+  273  cd portfolio/
+  274  c9 index.html 
+  275  ..
+  276  clear
+  277  mkdir testing
+  278  cd testing/
+  279  touch test.js
+  280  c9 test.js 
+  281  clear
+  282  node test.js 
+  283  ..
+  284  mkdir freecodecamp
+  285  cd freecodecamp/
+  286  touch reverseAString.js
+  287  c9 reverseAString.js 
+  288  node reverseAString.js 
+  289  git init
+  290  add reverseAString.js 
+  291  git commit -m "initial commit"
+  292  git add reverseAString.js 
+  293  git commit -m "initial commit"  reverseAString.js 
+  294  git remote add origin git@github.com:jmcgee86/FreeCodeCamp.git
+  295  git push -u origin master
+  296  git add reverseAString.js 
+  297  git commit -m "better solution"
+  298  git push
+  299  node reverseAString.js 
+  300  ..
+  301  clear
+  302  cd javascript/
+  303  touch array.js
+  304  c9 array.js 
+  305  node array.js 
+  306  node
+  307  ..
+  308  clear
+  309  mkdir codenight
+  310  cd codenight/
+  311  touch night1intro.html
+  312  c9 night1intro.html 
+  313  touch style.css
+  314  mkdir night1intro
+  315  c9 style.css 
+  316  cd night1intro/
+  317  ..
+  318  mkdir night1intermediate
+  319  cd night1intermediate/
+  320  touch mario.c
+  321  c9 mario.c 
+  322  clear
+  323  clang mario.c -o mario
+  324  ./mario
+  325  clang marion.c -o mario
+  326  clear
+  327  ..
+  328  ,,
+  329  ..
+  330  clear
+  331  ..
+  332  ls
+  333  ls -a
+  334  cd workspace/
+  335  mkdir unixstuff
+  336  ls
+  337  cd unixstuff/
+  338  ls
+  339  mkdir backups
+  340  ls -a
+  341  cd .
+  342  cd ..
+  343  pwd
+  344  cd unixstuff/
+  345  ls
+  346  pwd
+  347  ls unixstuff
+  348  ..
+  349  ls unixstuff/
+  350  ls backups/
+  351  ls unixstuff/backups/
+  352  ls ~/unixstuff
+  353  ls ls ~/workspace/unixstuff
+  354  % ls ~
+  355  ls ~
+  356  ls ~/..
+  357  cd unixstuff/
+  358  cp /vol/ee/ee-info/Teaching/Unix/science.txt .
+  359  cp science.txt 
+  360  cp science.txt .
+  361  cp science.txt science.bak
+  362  mv science.bak backups/.
+  363  ls
+  364  ls backups/
+  365  cp science.txt tempfile.txt
+  366  ls
+  367  rm tempfile.txt 
+  368  ls
+  369  rmdir backups/
+  370  mkdir tempstuff
+  371  ls
+  372  rmdir tempstuff/
+  373  ls
+  374  clear
+  375  cat science.txt 
+  376  less science.txt 
+  377  head science.txt 
+  378  head -5 science.txt 
+  379  tail science.txt 
+  380  tail +5 science.txt 
+  381  tail+5 science.txt 
+  382  less science.txt 
+  383  clear
+  384  grep science science.txt
+  385  grep Science science.txt 
+  386  grep -1 science science.txt 
+  387  grep -ivc science science.txt 
+  388  wc -w science.txt 
+  389  wc -1 science.txt 
+  390  wc -l science.txt 
+  391  cat
+  392  cat > list1
+  393  cat list1 
+  394  cat >>  list1
+  395  cat list1 
+  396  cat > list2
+  397  cat list1 list2 > biglist
+  398  cat biglist 
+  399  sort
+  400  sort < biglist 
+  401  sort < biglist > slist
+  402  cat slist
+  403  who
+  404  who > names.txt
+  405  sort < names.txt
+  406  who | sort
+  407  who | wc -l
+  408  cat list1 list2 | grep p | sort
+  409  ls list*
+  410  ls *list
+  411  ls ?list
+  412  man wc
+  413  whatis wc
+  414  apropos keyword
+  415  apropos copy
+  416  ls -l
+  417  ls -la
+  418  ls -lg
+  419  chmod a+rw biglist 
+  420  chmod a+rx science.txt 
+  421  ls -l
+  422  chmod a-wrx backups/
+  423  ls -l
+  424  chmod a+wx backups/
+  425  ls -l
+  426  ps
+  427  sleep 10
+  428  sleep 10 &
+  429  sleep 1000
+  430  jobs
+  431  fg 1
+  432  fg %1
+  433  sleep 100
+  434  sleep 100 &
+  435  jobs
+  436  kill 1
+  437  kill %1
+  438  sleep 1000 &
+  439  ps
+  440  kill 26664
+  441  quota -v
+  442  df .
+  443  cd
+  444  du -s
+  445  du -s *
+  446  cd workspace/
+  447  cd unixstuff/
+  448  ls -l science.txt 
+  449  gzip science.txt 
+  450  ls -l
+  451  gunzip science.txt.gz 
+  452  zcat science.txt.gz
+  453  gzip science.txt
+  454  zcat science.txt.gz 
+  455  zcat science.txt.gz | less
+  456  file *
+  457  diff list1 list2
+  458  find . -name "*.txt" -print
+  459  . -size +1M -ls
+  460  history (show command history list)
+  461  history
+  462  ! !
+  463  history (show command history list)
+  464  ..
+  465  grep -ivc science science.txt 
+  466  set history=100
+  467  cd unixstuff/
+  468  history > unix_tutorial_1-6
